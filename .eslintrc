@@ -1,0 +1,24 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": ["airbnb", "airbnb/hooks"],
+  "parser": "babel-eslint",
+  "plugins": ["react", "jsx-a11y", "import"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    // 확장자 js, jsx 모두 허용
+    "arrow-parens": ["warn", "as-needed"],
+    // 화살표 함수 파라미터 한개일때 괄호 생략
+    "no-unused-vars": ["error", { "vars": "all", "args": "all" }],
+    // vars 사용시 error , 모든 변수의 사용 확인, 모든 선언된 인수 사용
+    "import/prefer-default-export": ["off"],
+    // export const 문 사용 시 error 발생 규칙 해제
+    "indent": ["error", 2],
+    "react/jsx-indent": [2, "tab"],
+    // 들여쓰기 2칸 , jsx 에서도 들여쓰기 2칸 + Tab
+    "no-console": "error"
+    // console 사용 x
+  }
+}
