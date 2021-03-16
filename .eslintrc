@@ -3,7 +3,7 @@
     "browser": true,
     "node": true
   },
-  "extends": ["airbnb", "airbnb/hooks"],
+  "extends": ["airbnb", "airbnb/hooks", "prettier", "prettier/react"],
   "parser": "babel-eslint",
   "plugins": ["react", "jsx-a11y", "import"],
   "rules": {
@@ -16,9 +16,10 @@
     "import/prefer-default-export": ["off"],
     // export const 문 사용 시 error 발생 규칙 해제
     "indent": ["error", 2],
-    "react/jsx-indent": [2, "tab"],
-    // 들여쓰기 2칸 , jsx 에서도 들여쓰기 2칸 + Tab
-    "no-console": "error"
+    "react/jsx-indent": [2, "space"],
+    // 들여쓰기 2칸 , jsx 에서도 들여쓰기 2칸 + space
+    "no-console": ["error"],
     // console 사용 x
+    "insert_final_newline": true
   }
 }
